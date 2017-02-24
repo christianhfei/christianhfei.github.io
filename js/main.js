@@ -30,7 +30,7 @@ $(document).ready(function () {
             backgroundColor: "rgba(19,49,117,0.4)"
         }]
         }
-    });
+    }); 
 
     var timeAtEachStatusChart = document.getElementById('timeAtEachStatus').getContext('2d');
     var timeAtEachStatusChart = new Chart(timeAtEachStatusChart, {
