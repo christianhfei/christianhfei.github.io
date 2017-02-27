@@ -15,6 +15,29 @@ body{
     background: #D4D4D4;
 }
 
+div.dashboard-container{
+    overflow: auto;
+    top: 115px;
+}
+
+div#ltss-mainmenu-container{
+    margin-top: -52px;
+}
+div#LtssMarylandHeaderInfo{
+    h1{
+        margin-left: 10px;
+    }
+}
+
+
+div#controlBar{
+    padding-top: 5px;
+    label{
+        margin-bottom: 0;
+    }
+}
+
+
 
 
 // Login Card Styles
@@ -23,7 +46,7 @@ body{
     .boxShadow;
     .panel-body{
         h3{
-            margin: 0 0 20px 0;
+            margin: 0 0 10px 0;
             font-weight: bold;
             font-size: 165%;
         }
@@ -32,18 +55,27 @@ body{
             display: inline-block;
         } 
         span.pull-right{
-            margin-top: -40px;
+            margin-top: -29px;
         }
 
         .canvasContainer{
             box-sizing: border-box;
             width: 100%;            
+            padding: 0;
+        }
+
+        div.recentLogins{
+            div.row{
+                div.col-xs-12.col-sm-12.col-md-12.col-lg-12{
+                    padding: 0;
+                }
+            }
         }
 
         div.loginStats{
             font-weight: bold;
             color: #B8B8B8;            
-            text-align: center;
+            text-align: center; 
             div.outerContainer{
                 position: relative;
                 top: 120px;
@@ -108,7 +140,7 @@ div.daysToResolve, div.timeBetweenFlags{
             div.row{
                 div{
                     height: 80px;
-                    padding-top: 25px;
+                    padding-top: 30px;
                     span{
                         font-size: 150%;
                         line-height: 25px;
@@ -127,6 +159,14 @@ div.daysToResolve, div.timeBetweenFlags{
 div.outerColumn{
     padding: 0;
 }
+
+@media only screen and (max-width: 1508px){
+    div.dashboard-container{
+        top: 135px;
+    }
+    
+}
+
 @media only screen and (max-width : 1410px) {
 
     
@@ -172,7 +212,12 @@ div.outerColumn{
 
 }
 
+
+
 @media only screen and (max-width :1199px){
+    div.dashboard-container{
+        top: 113px;
+    }
     .panel{
         .panel-body{
             div.loginStats{
@@ -244,7 +289,7 @@ div.outerColumn{
                 div.row{
                     div{
                         height: 80px;
-                        padding-top: 5%;
+                        padding-top: 28px;
                         span{
                             font-size: 140%;
                             line-height: 25px;
@@ -259,6 +304,10 @@ div.outerColumn{
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 769px) {
+
+    div.dashboard-container{
+        top: 140px;
+    }
     .panel{
         .panel-body{
             div.table-responsive{
@@ -286,6 +335,8 @@ div.outerColumn{
     }
 }
 
+
+
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
     .panel{
@@ -297,6 +348,12 @@ div.outerColumn{
             }
             
         }
+    }
+}
+
+@media only screen and (max-width: 460px){
+    div.dashboard-container{
+        top: 170px;
     }
 }
 

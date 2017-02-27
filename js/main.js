@@ -30,7 +30,7 @@ $(document).ready(function () {
             backgroundColor: "rgba(19,49,117,0.4)"
         }]
         }
-    }); 
+    });
 
     var timeAtEachStatusChart = document.getElementById('timeAtEachStatus').getContext('2d');
     var timeAtEachStatusChart = new Chart(timeAtEachStatusChart, {
@@ -51,7 +51,7 @@ $(document).ready(function () {
             }
         },
         data: {
-            labels: ["Flagged (days)", "Under Review (days)", "Reviewed - No further action required", "Reviewed - Escalated to Incident"],
+            labels: ["Flagged (days)", ["Under", "Review", "(days)"], ["Reviewed -", "No further", "action required", "(days)"], ["Reviewed -", "Escalated", "to Incident", "(days)"]],
             datasets: [
                 {
                     backgroundColor: [
